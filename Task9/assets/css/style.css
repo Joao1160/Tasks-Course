@@ -1,0 +1,155 @@
+:root {
+  --font: "Ropa Sans", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.blog {
+  background-color: #fff;
+}
+.blog .container .blog-heading .heading {
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 300;
+  color: #f00;
+  text-transform: uppercase;
+  position: relative;
+  width: fit-content;
+  margin: 10px auto;
+  z-index: 2;
+}
+.blog .container .blog-heading .heading::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #f00;
+  transform: translate(50%, -50%);
+}
+.blog .container .blog-heading .heading::before {
+  content: "our blog";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  font-size: 65px;
+  color: #bebebe;
+  font-family: "Rubik Scribble", system-ui;
+  z-index: -1;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.blog .container .blog-heading .text {
+  font-family: var(--font);
+  font-size: 48px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+}
+.blog .container .blog-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  position: relative;
+  padding: 40px 0;
+}
+
+.blog .container .blog-items .blog-item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.blog .container .blog-items .blog-item .blog-image {
+  position: relative;
+}
+.blog .container .blog-items .blog-item .blog-image img {
+  max-width: 100%;
+}
+.blog .container .blog-items .blog-item .blog-image .image-label {
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  width: 80px;
+  height: 30px;
+  z-index: 2;
+  top: 20px;
+  left: 40px;
+  border-radius: 50px;
+  line-height: 30px;
+  text-align: center;
+  font-family: var(--font);
+  color: #fff;
+  font-size: 14px;
+}
+.blog .container .blog-item .item-data {
+  padding: 20px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: translateY(-6px);
+}
+
+.blog .container .blog-item .item-data .details {
+  display: flex;
+  gap: 20px;
+  font-family: var(--font);
+  margin-bottom: 20px;
+}
+.blog .container .blog-item .item-data .detail-item i {
+  margin-right: 5px;
+  color: #f00;
+}
+.blog .container .blog-item .item-data .item-title {
+  font-family: var(--font);
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.blog .container .blog-item .item-data .item-desc {
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  height: 40px;
+  color: #666;
+}
+.blog .container .blog-item .item-data .btn {
+  font-family: var(--font);
+  color: #444;
+  width: fit-content;
+}
+.blog .container .blog-item .item-data .btn a {
+  color: #444;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.blog .container .blog-item .item-data .btn i {
+  transition: 0.5s;
+}
+.blog .container .blog-item .item-data .btn:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .blog .container .blog-heading .heading::before {
+    width: 320px;
+    font-size: 50px;
+  }
+
+  .blog .container .blog-heading .text {
+    font-size: 36px;
+  }
+}

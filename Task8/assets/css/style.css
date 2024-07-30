@@ -1,0 +1,172 @@
+:root {
+  --font: "Open Sans", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landing {
+  background: url(../images/landing.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5406dbe5;
+  z-index: -1;
+}
+
+.landing .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  gap: 50px;
+  z-index: 4;
+}
+.landing .container .iphone-image img {
+  max-width: 500px;
+}
+.landing .container .iphone-datails .iphone-title {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-style: italic;
+}
+.landing .container .iphone-datails .text {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.landing .container .iphone-datails .desc {
+  font-family: var(--font);
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+  height: 120px;
+  width: 400px;
+  overflow: hidden;
+  line-height: 1.5;
+}
+.landing .container .iphone-datails .links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.landing .container .iphone-datails .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: bold;
+  flex-basis: 220px;
+  height: 60px;
+  margin-bottom: 20px;
+  transition: .5s;
+}
+.landing .container .iphone-datails .link-title {
+  display: flex;
+  flex-direction: column;
+}
+.landing .container .iphone-datails .link i {
+  font-size: 36px;
+}
+.landing .container .iphone-datails .link:hover{
+  background-color: #4006a5;
+  cursor: pointer;
+}
+.landing .container .iphone-datails .link .google {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 300;
+}
+.landing .container .iphone-datails .link .app-store {
+  font-weight: 300;
+  font-size: 14px;
+}
+.landing .container .iphone-datails .tip {
+  font-weight: 300;
+  font-size: 18x;
+  color: #fff;
+  font-style: italic;
+}
+
+@media (max-width: 1020px) {
+  .landing .container .iphone-image img {
+    max-width: 350px;
+  }
+
+  .landing .container .iphone-datails .desc {
+    width: 350px;
+  }
+
+  .landing .container .iphone-datails .link {
+    font-size: 22px;
+    flex-basis: 180px;
+  }
+}
+@media (max-width: 786px) {
+  .landing .container {
+    flex-direction: column;
+  }
+
+  .landing .container .iphone-datails {
+    text-align: center;
+  }
+
+  .landing .container .iphone-image img {
+    max-width: 320px;
+  }
+
+  .landing .container .iphone-datails .desc {
+    height: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 320px;
+  }
+
+  .landing .container .iphone-datails .links {
+    justify-content: center;
+  }
+
+  .landing .container .iphone-datails .link {
+    font-size: 18px;
+    font-weight: bold;
+    flex-basis: 150px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .landing .container .iphone-datails .link .google {
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 300;
+  }
+  .landing .container .iphone-datails .link .app-store {
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
