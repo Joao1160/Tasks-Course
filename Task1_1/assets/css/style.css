@@ -1,0 +1,106 @@
+:root {
+  --font: "Open Sans", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.features {
+  background-color: #fdfdfd;
+}
+.features .container .section-heading {
+  padding: 30px;
+  text-align: center;
+}
+.features .container .section-heading h2 {
+  font-size: 3em;
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+
+.features .container .section-heading span {
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 176, 69, 1),
+    rgba(253, 29, 29, 1),
+    rgba(131, 58, 180, 1)
+  );
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--font);
+  width: fit-content;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 10px auto;
+}
+
+.features .container .features-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.features .container .features-items .features-item {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 0 15px #f6f6f6;
+}
+
+.features .container .features-items .features-item .icon div {
+  background: linear-gradient(
+    120deg,
+    rgba(252, 176, 69, 1),
+    rgba(253, 29, 29, 1),
+    rgba(131, 58, 180, 1)
+  );
+  width: 80px;
+  border-radius: 50%;
+  height: 80px;
+  line-height: 90px;
+  text-align: center;
+  margin: auto;
+}
+
+.features .container .features-items .features-item .icon i {
+  font-size: 32px;
+  color: #fff;
+}
+.features .container .features-items .features-item .text {
+  margin-top: 20px;
+}
+.features .container .features-items .features-item .text h3 {
+  font-family: var(--font);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.features .container .features-items .features-item .text .desc {
+  font-family: var(--font);
+  color: #464646;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+@media (min-width: 1220px) {
+  .features .container .features-items .features-item:nth-child(2n) {
+    transform: translateY(30px);
+  }
+}

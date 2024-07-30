@@ -1,0 +1,82 @@
+:root{
+  --font: "Open Sans", sans-serif ;
+  --main-color :#0a2d2e ;
+}
+.container{
+  width: 90%;
+  margin: 50px auto ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-services .container .section-heading {
+  margin: 30px;
+  text-align: center;
+
+}
+.main-services .container .section-heading h2{
+  font-size: 2em;
+  font-family: var(--font);
+  text-transform: uppercase;
+}
+
+.main-services .container .section-heading span{
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin: 20px auto 60px ;
+}
+
+.main-services .container .services-items{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+  gap: 30px;
+}
+
+.main-services .container .services-items .services-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.main-services .container .services-items .services-item .icon div{
+  background-color: var(--main-color);
+  width: 80px;
+  border-radius: 50%;
+  height: 80px;
+  line-height: 90px;
+  text-align: center;
+  
+}
+
+.main-services .container .services-items .services-item .icon i{
+  font-size: 32px;
+  color: #fff;
+}
+.main-services .container .services-items .services-item .text{
+  margin-left: 20px;
+}
+.main-services .container .services-items .services-item .text h3{
+  font-family: var(--font);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.main-services .container .services-items .services-item .text .desc{
+  font-family: var(--font);
+  color: #464646;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+
+
+
