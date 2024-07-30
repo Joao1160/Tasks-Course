@@ -1,0 +1,150 @@
+:root {
+  --font: "Open Sans", sans-serif;
+  --main-color: rgb(64 71 97);
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.testemoinails .container .section-heading {
+  margin: 30px;
+  text-align: center;
+}
+.testemoinails .container .section-heading h2 {
+  font-size: 2em;
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+
+.testemoinails .container .section-heading span {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 16px;
+  color: #666;
+}
+
+.testemoinails .container .testemoinails-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.testemoinails .container .testemoinails-items .testemoinails-item {
+  text-align: center;
+  position: relative;
+  background-color: var(--main-color);
+  padding: 70px 70px 50px 70px;
+}
+
+.testemoinails .container .testemoinails-items .testemoinails-item .profile {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+.testemoinails
+  .container
+  .testemoinails-items
+  .testemoinails-item
+  .profile
+  img {
+  border-radius: 50%;
+  max-width: 100%;
+  border: 1px solid var(--main-color);
+}
+.testemoinails .container .testemoinails-items .testemoinails-item .star-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.testemoinails
+  .container
+  .testemoinails-items
+  .testemoinails-item
+  .star-icons
+  i {
+  font-size: 16px;
+  color: gold;
+}
+.testemoinails .container .testemoinails-items .testemoinails-item .desc {
+  font-size: 16px;
+  color: #ddd;
+  font-family: var(--font);
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-style: italic;
+  height: 100px;
+  overflow: hidden;
+}
+.testemoinails .container .testemoinails-items .testemoinails-item h3 {
+  font-size: 20px;
+  color: #fff;
+  font-family: var(--font);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.testemoinails .container .testemoinails-items .testemoinails-item span {
+  display: block;
+  font-size: 16px;
+  color: #ddd;
+  font-family: var(--font);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.testemoinails .container .testemoinails-items .testemoinails-item .quote-icon {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  background-color: #eee;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  box-shadow: 0 0 3px #666;
+}
+.testemoinails
+  .container
+  .testemoinails-items
+  .testemoinails-item
+  .quote-icon
+  i {
+  color: #f00;
+  line-height: 60px;
+  font-size: 32px;
+}
+.polls {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  text-align: center;
+  display: flex;
+}
+.polls span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f00;
+  border-radius: 50%;
+  margin: auto;
+}
+.polls span.active {
+  background-color: #f00;
+}

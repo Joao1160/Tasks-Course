@@ -1,0 +1,136 @@
+:root {
+  --font: "Open Sans", sans-serif;
+
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.testemoinails {
+  background-color: #ddd;
+}
+.testemoinails .container .testemoinails-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  position: relative;
+}
+
+.testemoinails .container .testemoinails-items .testemoinails-item {
+  position: relative;
+  background-color: #fff ;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.testemoinails .container .testemoinails-items .testemoinails-item .course-image img {
+  max-width: 100%;
+} 
+
+.testemoinails .container .testemoinails-item .item-data {
+  padding: 20px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+} 
+.testemoinails .container .testemoinails-item .item-data .reviews {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.testemoinails .container .testemoinails-item .item-data .reviews i{
+  color: gold;
+} 
+.testemoinails .container .testemoinails-item .item-data .item-title{
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+} 
+.testemoinails .container .testemoinails-item .item-data .details{
+  display: flex;
+  background-color: #eee;
+  width: fit-content;
+  margin-bottom: 20px;
+} 
+.testemoinails .container .testemoinails-item .item-data .detail-item{
+  padding: 10px; 
+  color: #999;
+  font-family: var(--font);
+  font-size: 14px;
+} 
+.testemoinails .container .testemoinails-item .item-data .detail-item i{
+  color: #999;
+} 
+.testemoinails .container .testemoinails-item .item-data .detail-item:nth-child(1){
+  border-right: 1px solid #ddd;
+} 
+.testemoinails .container .testemoinails-item .item-data .item-desc{
+  color: #777;
+  font-family: var(--font);
+  margin-bottom: 20px;
+  height: 40px;
+  overflow: hidden;
+} 
+.testemoinails .container .testemoinails-item .item-data .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testemoinails .container .testemoinails-item .item-data .profile img{
+  max-width: 45px;
+  border-radius: 50%;
+  
+} 
+
+.testemoinails .container .testemoinails-item .item-data .profile .profile-title{
+  font-size: 16px;
+  font-family: var(--font);
+  font-weight: bold; 
+} 
+.testemoinails .container .testemoinails-item .item-data .profile .profile-title span{
+  color: #777;
+} 
+.testemoinails .container .testemoinails-item .item-data .icon-bookmark{
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  background-color: #ddd;
+  color: #666;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  border:1px solid #bbb;
+} 
+.testemoinails .container .testemoinails-item .subscripe{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: bold;
+}
+.testemoinails .container .testemoinails-item .subscripe .price .dash{
+  text-decoration: line-through;
+}
+.testemoinails .container .testemoinails-item .subscripe .price .highlight{
+  color: #f00;
+  margin-left: 5px;
+}
+.testemoinails .container .testemoinails-item .subscripe .btn a{
+  text-decoration: none;
+  color: #666;  
+}
+.testemoinails .container .testemoinails-item .subscripe .btn i{
+  color: #666; 
+  font-size: 12px; 
+}
