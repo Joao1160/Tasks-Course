@@ -1,0 +1,111 @@
+:root {
+  --font: "Open Sans", sans-serif;
+  --main-color:rgb(43, 170, 255);
+}
+.container {
+  padding: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.team {
+  background-color: #fdfdfd;
+}
+.team .container .section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team .container .section-heading h2 {
+  font-size: 2.5em;
+  font-family: var(--font);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.team .container .section-heading span.highlight {
+  display: block;
+  font-size: 16px;
+  color: var(--main-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.team .container .section-heading span.short-line {
+  display: block;
+  height: 3px;
+  width: 70px;
+  background-color: var(--main-color);
+  margin: 15px auto;
+}
+.team .container .team-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.team .container .team-items .team-item {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.team .container .team-items .team-item .pic {
+position: relative;
+}
+.team .container .team-items .team-item .pic img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.team .container .team-items .team-item .text {
+  padding: 20px;
+}
+.team .container .team-items .team-item .text h3 {
+  font-family: var(--font);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #333;
+  transition: 0.5s;
+}
+.team .container .team-items .team-item .text .desc {
+  font-family: var(--font);
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0;
+}
+.team .container .team-items .team-item .icon{
+  position: absolute;
+  font-size: 20px;
+  color: var(--main-color);
+  background-color: #fff;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  transform: rotate(45deg) translate(0,40px );
+  transition: 0.5s;
+
+}
+.team .container .team-items .team-item .icon i{
+  transform: rotate(-45deg) ;
+}
+.team .container .team-items .team-item:hover {
+  background-color: #111;
+}
+.team .container .team-items .team-item:hover .heading {
+  color:#fff;
+}
+.team .container .team-items .team-item:hover .icon {
+  color:#fff;
+  background-color: var(--main-color);
+}
