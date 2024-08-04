@@ -1,0 +1,102 @@
+:root {
+  --font: "Open Sans", sans-serif;
+  --dark-color: rgb(21 34 61);
+  --main-color: rgb(28 103 242);
+  --secondary-color: rgb(238 241 249);
+}
+.container {
+  padding: 0 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.feature .container .feature-items {
+  display: grid;
+  grid-template-areas:
+    "item1 icon item4"
+    "item2 icon item5"
+    "item3 icon item6";
+  gap: 10px;
+}
+.feature .container .feature-item:nth-child(1) {
+  grid-area: item1;
+  color: #326dd6;
+}
+.feature .container .feature-item:nth-child(2) {
+  grid-area: item2;
+  color: #ff9800;
+}
+.feature .container .feature-item:nth-child(3) {
+  grid-area: item3;
+  color: #ff64c2;
+}
+.feature .container .feature-item:nth-child(4) {
+  grid-area: item4;
+  color: #9c27b0;
+}
+.feature .container .feature-item:nth-child(5) {
+  grid-area: item5;
+  color: #4caf50;
+}
+.feature .container .feature-item:nth-child(6) {
+  grid-area: item6;
+  color: #f44336;
+}
+.feature .container .iphone-icon {
+  grid-area: icon;
+}
+.feature .container .iphone-icon img {
+  max-width: 450px;
+}
+.feature .container .feature-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.feature .container .feature-item .icon i {
+  font-size: 36px;
+  padding-top: 5px;
+}
+.feature .container .feature-desc .item-title {
+  font-family: var(--font);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #000;
+}
+.feature .container .feature-desc .item-desc {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 16px;
+  color: #999;
+}
+@media (max-width: 1200px) {
+  .feature .container .feature-items {
+    grid-template-areas:
+      "item1 item1 item1  item2 item2 item2"
+      "item3 item3 item3  item4 item4 item4"
+      "item5 item5 item5  item6 item6 item6"
+      " . . icon icon . .";
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .feature .container .iphone-icon img {
+    max-width: 320px;
+  }
+  .feature .container .feature-items {
+    grid-template-areas:
+      "item1 item1 item1 item1 item1 item1 "
+      " item2 item2 item2 item2 item2 item2"
+      "item3 item3 item3 item3 item3 item3 "
+      " item4 item4 item4 item4 item4 item4"
+      "item5 item5 item5 item5 item5 item5 "
+      " item6 item6 item6 item6 item6 item6"
+      " . . icon icon . .";
+  }
+  .feature .container .feature-item {
+    gap: 40px;
+  }
+}
