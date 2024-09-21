@@ -1,0 +1,16 @@
+- adding hook or solution for post api for not calling it two times.
+
+####################################################################################################################
+Done Tasks :
+
+- add loading screen for hame page disappear  after loading posts 
+
+- validation on Add/edit post From (title and body) are required ,
+   - title minimum length: 10 characters && maximum length: 150 characters  is less/greater show error message
+   - body minimum length: 50 characters && maximum length: 300 characters  is less/greater show error message
+
+- Post delete with success message.
+
+- Post Details page  (design page from posts details and show title and body). 
+
+- validation on Add post post button not working (deactivate) till user add (title and body) 
