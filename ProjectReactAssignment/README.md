@@ -2,6 +2,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 # You should install this tools :
 
+- npm create-react-app "Folder Name"
 - npm install @reduxjs/toolkit react-redux axios
 - npm install react-router-dom
 - npm install bootstrap
